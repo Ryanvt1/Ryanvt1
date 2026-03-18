@@ -52,11 +52,11 @@
     <animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/>
   </rect>
   <text x="30" y="120" class="label">Python 65%</text>
+  <text x="340" y="150" class="label">PHP 35%</text>
   <text x="180" y="120" class="label">JavaScript 20%</text>
   <text x="340" y="120" class="label">TypeScript 5%</text>
   <text x="480" y="120" class="label">HTML 4%</text>
 
   <text x="30" y="150" class="label">CSS 3%</text>
   <text x="180" y="150" class="label">SCSS 2%</text>
-  <text x="340" y="150" class="label">PHP 1%</text>
 </svg>
