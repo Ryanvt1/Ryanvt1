@@ -1,38 +1,42 @@
-<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .title { font: 600 18px sans-serif; fill: #58a6ff; }
+    .title { font: 600 20px sans-serif; fill: #58a6ff; }
     .label { font: 14px sans-serif; fill: #c9d1d9; }
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 12; }
   </style>
 
-  <text x="20" y="30" class="title">Most Used Languages</text>
+  <rect x="10" y="10" width="580" height="200" class="bg"/>
 
-  <rect x="20" y="50" width="455" height="12" rx="6" fill="#30363d"/>
+  <text x="30" y="40" class="title">Most Used Languages</text>
 
-  <rect x="20" y="50" width="0" height="12" rx="6" fill="#3572A5">
-    <animate attributeName="width" from="0" to="295" dur="1.2s" fill="freeze" />
+  <rect x="30" y="70" width="540" height="14" rx="7" fill="#30363d"/>
+
+  <rect x="30" y="70" width="0" height="14" rx="7" fill="#3572A5">
+    <animate attributeName="width" from="0" to="351" dur="1.2s" fill="freeze"/>
   </rect>
 
-  <rect x="315" y="50" width="0" height="12" fill="#f1e05a">
-    <animate attributeName="width" from="0" to="91" dur="1.4s" fill="freeze" />
+  <rect x="381" y="70" width="0" height="14" fill="#f1e05a">
+    <animate attributeName="width" from="0" to="108" dur="1.4s" fill="freeze"/>
   </rect>
 
-  <rect x="406" y="50" width="0" height="12" fill="#e34c26">
-    <animate attributeName="width" from="0" to="45" dur="1.6s" fill="freeze" />
+  <rect x="489" y="70" width="0" height="14" fill="#e34c26">
+    <animate attributeName="width" from="0" to="54" dur="1.6s" fill="freeze"/>
   </rect>
 
-  <rect x="451" y="50" width="0" height="12" fill="#563d7c">
-    <animate attributeName="width" from="0" to="24" dur="1.8s" fill="freeze" />
+  <rect x="543" y="70" width="0" height="14" fill="#563d7c">
+    <animate attributeName="width" from="0" to="27" dur="1.8s" fill="freeze"/>
   </rect>
 
-  <circle cx="20" cy="90" r="5" fill="#3572A5"/>
-  <text x="35" y="95" class="label">Python 65%</text>
 
-  <circle cx="150" cy="90" r="5" fill="#f1e05a"/>
-  <text x="165" y="95" class="label">JavaScript 20%</text>
+  <circle cx="40" cy="120" r="5" fill="#3572A5"/>
+  <text x="55" y="125" class="label">Python 65%</text>
 
-  <circle cx="300" cy="90" r="5" fill="#e34c26"/>
-  <text x="315" y="95" class="label">HTML 10%</text>
+  <circle cx="200" cy="120" r="5" fill="#f1e05a"/>
+  <text x="215" y="125" class="label">JavaScript 20%</text>
 
-  <circle cx="400" cy="90" r="5" fill="#563d7c"/>
-  <text x="415" y="95" class="label">CSS 5%</text>
+  <circle cx="380" cy="120" r="5" fill="#e34c26"/>
+  <text x="395" y="125" class="label">HTML 10%</text>
+
+  <circle cx="500" cy="120" r="5" fill="#563d7c"/>
+  <text x="515" y="125" class="label">CSS 5%</text>
 </svg>
