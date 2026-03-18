@@ -1,42 +1,72 @@
-<svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="240" viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .title { font: 600 20px sans-serif; fill: #58a6ff; }
-    .label { font: 14px sans-serif; fill: #c9d1d9; }
-    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 12; }
+    .title { font: 600 20px monospace; fill: #58a6ff; }
+    .label { font: 13px monospace; fill: #c9d1d9; }
+    .bg { fill: #0d1117; stroke: #58a6ff; stroke-width: 1; rx: 12; }
   </style>
 
-  <rect x="10" y="10" width="580" height="200" class="bg"/>
+  <!-- Glow -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-  <text x="30" y="40" class="title">Most Used Languages</text>
+  <!-- Card -->
+  <rect x="10" y="10" width="580" height="220" class="bg"/>
 
+  <!-- Title -->
+  <text x="30" y="40" class="title" filter="url(#glow)">Most Used Languages</text>
+
+  <!-- Background bar -->
   <rect x="30" y="70" width="540" height="14" rx="7" fill="#30363d"/>
 
-  <rect x="30" y="70" width="0" height="14" rx="7" fill="#3572A5">
+  <!-- Python -->
+  <rect x="30" y="70" width="0" height="14" rx="7" fill="#3572A5" filter="url(#glow)">
     <animate attributeName="width" from="0" to="351" dur="1.2s" fill="freeze"/>
   </rect>
 
+  <!-- JS -->
   <rect x="381" y="70" width="0" height="14" fill="#f1e05a">
     <animate attributeName="width" from="0" to="108" dur="1.4s" fill="freeze"/>
   </rect>
 
-  <rect x="489" y="70" width="0" height="14" fill="#e34c26">
-    <animate attributeName="width" from="0" to="54" dur="1.6s" fill="freeze"/>
+  <!-- TS -->
+  <rect x="489" y="70" width="0" height="14" fill="#3178c6">
+    <animate attributeName="width" from="0" to="27" dur="1.6s" fill="freeze"/>
   </rect>
 
-  <rect x="543" y="70" width="0" height="14" fill="#563d7c">
-    <animate attributeName="width" from="0" to="27" dur="1.8s" fill="freeze"/>
+  <!-- HTML -->
+  <rect x="516" y="70" width="0" height="14" fill="#e34c26">
+    <animate attributeName="width" from="0" to="20" dur="1.7s" fill="freeze"/>
   </rect>
 
+  <!-- CSS -->
+  <rect x="536" y="70" width="0" height="14" fill="#563d7c">
+    <animate attributeName="width" from="0" to="15" dur="1.8s" fill="freeze"/>
+  </rect>
 
-  <circle cx="40" cy="120" r="5" fill="#3572A5"/>
-  <text x="55" y="125" class="label">Python 65%</text>
+  <!-- SCSS -->
+  <rect x="551" y="70" width="0" height="14" fill="#c6538c">
+    <animate attributeName="width" from="0" to="10" dur="1.9s" fill="freeze"/>
+  </rect>
 
-  <circle cx="200" cy="120" r="5" fill="#f1e05a"/>
-  <text x="215" y="125" class="label">JavaScript 20%</text>
+  <!-- PHP -->
+  <rect x="561" y="70" width="0" height="14" fill="#4F5D95">
+    <animate attributeName="width" from="0" to="9" dur="2s" fill="freeze"/>
+  </rect>
 
-  <circle cx="380" cy="120" r="5" fill="#e34c26"/>
-  <text x="395" y="125" class="label">HTML 10%</text>
+  <!-- Labels -->
+  <text x="30" y="120" class="label">Python 65%</text>
+  <text x="180" y="120" class="label">JavaScript 20%</text>
+  <text x="340" y="120" class="label">TypeScript 5%</text>
+  <text x="480" y="120" class="label">HTML 4%</text>
 
-  <circle cx="500" cy="120" r="5" fill="#563d7c"/>
-  <text x="515" y="125" class="label">CSS 5%</text>
+  <text x="30" y="150" class="label">CSS 3%</text>
+  <text x="180" y="150" class="label">SCSS 2%</text>
+  <text x="340" y="150" class="label">PHP 1%</text>
 </svg>
