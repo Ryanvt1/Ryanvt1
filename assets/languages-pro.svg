@@ -28,35 +28,10 @@
     <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
   </rect>
 
-  <rect x="381" y="70" width="108" height="14" fill="#f1e05a">
+  <rect x="381" y="70" width="189" height="14" fill="#4F5D95" filter="url(#glow)">
     <animate attributeName="opacity" values="1;0.4;1" dur="1.7s" repeatCount="indefinite"/>
   </rect>
 
-  <rect x="489" y="70" width="27" height="14" fill="#3178c6">
-    <animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="516" y="70" width="20" height="14" fill="#e34c26">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="536" y="70" width="15" height="14" fill="#563d7c">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2.3s" repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="551" y="70" width="10" height="14" fill="#c6538c">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="561" y="70" width="9" height="14" fill="#4F5D95">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/>
-  </rect>
   <text x="30" y="120" class="label">Python 65%</text>
-  <text x="340" y="150" class="label">PHP 35%</text>
-  <text x="180" y="120" class="label">JavaScript 20%</text>
-  <text x="340" y="120" class="label">TypeScript 5%</text>
-  <text x="480" y="120" class="label">HTML 4%</text>
-
-  <text x="30" y="150" class="label">CSS 3%</text>
-  <text x="180" y="150" class="label">SCSS 2%</text>
+  <text x="200" y="120" class="label">PHP 35%</text>
 </svg>
