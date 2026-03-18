@@ -25,5 +25,5 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ryanvt1/ryanvt1/main/assets/languages-pro.svg" width="600"/>
+  <img src="https://raw.githubusercontent.com/ryanvt1/ryanvt1/main/assets/languages-pro.svg?v=123456" width="600"/>
 </p>
